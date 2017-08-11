@@ -19,8 +19,13 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  node: {
+    fs: "empty"
+  },
+
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
+    port: 8085
   }
 };
